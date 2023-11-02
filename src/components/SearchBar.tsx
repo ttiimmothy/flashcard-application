@@ -53,7 +53,7 @@ const SearchBar: React.FC = () => {
         )}
         {serverError && (
           <div className="text-red-500 mt-2 text-sm font-semibold w-[fit-content]">
-            Server is broken, so the flashcards cannot be generated.
+            Server is broken, so the flashcards cannot be generated now.
           </div>
         )}
       </div>
