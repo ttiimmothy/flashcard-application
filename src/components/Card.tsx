@@ -6,6 +6,7 @@ const Card: React.FC<{ question: string; answer: string }> = ({
   answer,
 }) => {
   const [flip, setFlip] = useState<boolean>(false);
+
   return (
     <ReactCardFlip isFlipped={flip} flipDirection="vertical">
       <div
