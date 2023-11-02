@@ -3,7 +3,7 @@
 [![cd](https://github.com/ttiimmothy/flashcard-application/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/flashcard-application/actions/workflows/cd.yml)
 <!-- [![pages-build-deployment](https://github.com/ttiimmothy/to-do-application/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/to-do-application/actions/workflows/pages/pages-build-deployment) -->
 
-A live chat application using `Typescript`, `React` amd `Vite`. It uses `Tailwind CSS` for simplifying CSS usage. The application uses `react-router` to navigate between pages.
+A live chat application using `Typescript`, `React` amd `Vite`. It uses `Tailwind CSS` for simplifying CSS usage. The application uses `react-router` to navigate between pages and `@reduxjs/toolkit` to perform state management. It also connects to `OpenAI ChatGPT 3.5` api to generate the flashcards.
 
 ## 🎯 Features
 
