@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://flashcard-application-cantek.vercel.app",
   "scripts": {
     "dev": "vite --port 5174",
     "build": "tsc && vite build",
