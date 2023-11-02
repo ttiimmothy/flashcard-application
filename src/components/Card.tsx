@@ -1,12 +1,11 @@
-import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
-const Card: React.FC<{ question: string; answer: string }> = ({
-  question,
-  answer,
-}) => {
-  const [flip, setFlip] = useState<boolean>(false);
-
+const Card: React.FC<{
+  question: string;
+  answer: string;
+  flip: boolean;
+  setFlip: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ question, answer, flip, setFlip }) => {
   return (
     <ReactCardFlip isFlipped={flip} flipDirection="vertical">
       <div
