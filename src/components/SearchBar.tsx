@@ -26,7 +26,7 @@ const SearchBar: React.FC = () => {
 
   return (
     <div className="flex items-start p-10 gap-8 justify-center">
-      <div className="w-9/12">
+      <div className="w-full">
         <input
           type="text"
           value={input}
