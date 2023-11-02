@@ -10,7 +10,7 @@ const Card: React.FC<{ question: string; answer: string }> = ({
   return (
     <ReactCardFlip isFlipped={flip} flipDirection="vertical">
       <div
-        className="h-80 w-96 bg-white rounded-lg border border-gray-200 shadow-md flex justify-center items-center cursor-pointer visible:false"
+        className="h-80 w-96 bg-white rounded-lg border border-gray-200 shadow-lg flex justify-center items-center cursor-pointer visible:false"
         onClick={() => setFlip(!flip)}
       >
         <div className="p-5 overflow-auto">
@@ -18,7 +18,7 @@ const Card: React.FC<{ question: string; answer: string }> = ({
         </div>
       </div>
       <div
-        className="h-80 w-96 bg-white rounded-lg border border-gray-200 shadow-md flex justify-center items-center cursor-pointer"
+        className="h-80 w-96 bg-white rounded-lg border border-gray-200 shadow-lg flex justify-center items-center cursor-pointer"
         onClick={() => setFlip(!flip)}
       >
         <div className="p-5 overflow-auto">
