@@ -1,6 +1,7 @@
 # Flashcard Application
 [![ci](https://github.com/ttiimmothy/flashcard-application/actions/workflows/ci.yml/badge.svg)](https://github.com/ttiimmothy/flashcard-application/actions/workflows/ci.yml)
 [![cd](https://github.com/ttiimmothy/flashcard-application/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/flashcard-application/actions/workflows/cd.yml)
+<!-- [![pages-build-deployment](https://github.com/ttiimmothy/to-do-application/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/to-do-application/actions/workflows/pages/pages-build-deployment) -->
 
 A live chat application using `Typescript`, `React` amd `Vite`. It uses `Tailwind CSS` for simplifying CSS usage. The application uses `react-router` to navigate between pages.
 
