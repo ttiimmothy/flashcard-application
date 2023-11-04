@@ -1,7 +1,7 @@
 import { OpenAI } from "openai";
 import { v4 as uuidv4 } from "uuid";
-import { Flashcard } from "../interfaces/Flashcard";
-import { Card } from "../interfaces/Card";
+import { Flashcard } from "../../interfaces/Flashcard";
+import { Card } from "../../interfaces/Card";
 
 const openai = new OpenAI({
   apiKey: import.meta.env.VITE_OPENAI_API_KEY,

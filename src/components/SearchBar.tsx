@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { addFlashcards } from "../utils/openai";
+import { addFlashcards } from "./utils/openai";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { IRootState } from "../store";
