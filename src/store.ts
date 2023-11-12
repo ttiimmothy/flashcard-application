@@ -1,4 +1,4 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit/";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import flashcardsReducer, {
   IFlashcardsState,
 } from "./redux/flashcards/flashcardsReducer";
