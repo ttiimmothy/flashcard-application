@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { addFlashcards } from "../utils/openai";
+import { addFlashcards } from "./utils/openai";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { IRootState } from "../store";
+import { addFlashcard } from "../redux/flashcards/flashcardsReducer";
 
 const SearchBar: React.FC = () => {
   const [input, setInput] = useState<string>("");
@@ -7,13 +11,30 @@ const SearchBar: React.FC = () => {
   const [lengthError, setLengthError] = useState(false);
   const [serverError, setServerError] = useState(false);
 
+  const navigate = useNavigate();
+
+  const flashcards = useSelector(
+    (state: IRootState) => state.flashcards.flashcards
+  );
+
+  const dispatch = useDispatch();
+
   const submitTopic = async () => {
     try {
       if (input.trim() !== "" && input.length > 10) {
         setIsLoading(true);
-        await addFlashcards(input);
+
+        const newFlashcard = await addFlashcards(input);
+        const flashcardsNew = [...flashcards, newFlashcard];
+        dispatch(addFlashcard(newFlashcard));
+        localStorage.setItem("flashcards", JSON.stringify(flashcardsNew));
+
         setInput("");
         setIsLoading(false);
+
+        navigate(`/flashcard/${newFlashcard.id}`, {
+          state: { topic: newFlashcard.topic, cards: newFlashcard.cards },
+        });
       } else if (input.length <= 10) {
         setLengthError(true);
       } else {
