@@ -33,4 +33,4 @@ If you use `github pages` for static page deployment, you need to set these envi
 
 ## License
 
-This repository is licensed under the GNU Affero General Public License v3.0.
+This repository is licensed under the GNU General Public License v3.0.
