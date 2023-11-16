@@ -1,9 +1,8 @@
 # Flashcard Application
 [![ci](https://github.com/ttiimmothy/flashcard-application/actions/workflows/ci.yml/badge.svg)](https://github.com/ttiimmothy/flashcard-application/actions/workflows/ci.yml)
 [![cd](https://github.com/ttiimmothy/flashcard-application/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/flashcard-application/actions/workflows/cd.yml)
-<!-- [![pages-build-deployment](https://github.com/ttiimmothy/to-do-application/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/to-do-application/actions/workflows/pages/pages-build-deployment) -->
 
-A live chat application using `Typescript`, `React` amd `Vite`. It uses `Tailwind CSS` for simplifying CSS usage. The application uses `react-router` to navigate between pages and `@reduxjs/toolkit` to perform state management. It also connects to `OpenAI ChatGPT 3.5` api to generate the flashcards.
+A flashcard application uses `Typescript`, `React` amd `Vite`. It uses `Tailwind CSS` for simplifying CSS usage. The application uses `react-router` to navigate between pages and `@reduxjs/toolkit` to perform state management. It also connects to `OpenAI ChatGPT 3.5` api to generate the flashcards.
 
 ## 🎯 Features
 
@@ -33,4 +32,4 @@ If you use `github pages` for static page deployment, you need to set these envi
 
 ## License
 
-This repository is licensed under the GNU General Public License v3.0.
+Flashcard Application is licensed under [GNU General Public License v3.0](LICENSE).
