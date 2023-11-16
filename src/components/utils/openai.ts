@@ -29,11 +29,7 @@ export async function addFlashcards(topic: string): Promise<Flashcard> {
     }
 
     const output = response.choices[0].message.content.trim();
-    // console.log(output);
-    // console.log('------------------');
     const lines = output.split("\n");
-    // console.log(lines);
-    // console.log('------------------');
     const cards: Card[] = [];
     let currentCard: Partial<Card> = {};
 
@@ -60,7 +56,6 @@ export async function addFlashcards(topic: string): Promise<Flashcard> {
       topic,
       cards,
     };
-    console.log(flashcardSet);
 
     return flashcardSet;
   } catch (error) {
